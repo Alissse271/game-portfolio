@@ -3,7 +3,7 @@ import { Color } from "./colors";
 
 export const resetCSS = css`
   body {
-    background: ${Color.DARK_THEME};
+    background: ${Color.WHITE_THEME};
   }
   * {
     font-family: "Exo 2", sans-serif;
