@@ -1,12 +1,18 @@
-import { useEffect } from "react";
-import { useAppSelector, getTheme } from "store";
+import { ProjectCard, ThemeToggler } from "components";
+import { styled } from "styled-components";
 
 export const App = () => {
-  const { theme } = useAppSelector(getTheme);
-
-  useEffect(() => {
-    document.documentElement.setAttribute("theme", theme);
-  }, [theme]);
-
-  return <div>App</div>;
+  return (
+    <StyledApp>
+      <ThemeToggler />
+      <ProjectCard />
+    </StyledApp>
+  );
 };
+
+const StyledApp = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  row-gap: 20px;
+`;
