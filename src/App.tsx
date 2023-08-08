@@ -1,4 +1,4 @@
-import { ProjectList, ThemeToggler } from "components";
+import { Footer, ProjectList, ThemeToggler } from "components";
 import { styled } from "styled-components";
 
 const projects = [
@@ -22,7 +22,7 @@ const projects = [
   {
     title: "4 The Reaper's Dog",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Eligendi non quis exercitation",
     tags: ["game", "Unity"],
   },
   {
@@ -34,7 +34,7 @@ const projects = [
   {
     title: "6 Lighting Math Explorer",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?",
+      "Lorem ipsum dolor sit ametnesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?",
     tags: ["youtube", "WebGL"],
   },
   {
@@ -55,6 +55,7 @@ export const App = () => {
     <StyledApp>
       <ThemeToggler />
       <ProjectList projects={projects} />
+      <Footer />
     </StyledApp>
   );
 };
