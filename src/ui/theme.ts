@@ -2,9 +2,9 @@ import { css } from "styled-components";
 
 const lightTheme = css`
   html[theme="light"] {
-    --white: #fff;
+    --white: #f5f5f5;
     --dark: #1f2122;
-    --grey: #f5f5f5;
+    --grey: #fff;
   }
 `;
 const darkTheme = css`

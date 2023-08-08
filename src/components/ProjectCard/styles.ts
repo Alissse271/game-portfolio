@@ -6,6 +6,7 @@ const Card = styled.div`
   width: 100%;
   border-radius: 23px;
   background-color: ${Color.GREY_THEME};
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 `;
 
 const Image = styled.img`
@@ -32,7 +33,7 @@ const Subtitle = styled.p`
 const BadgesList = styled.div`
   display: flex;
   flex-wrap: wrap;
-  column-gap: 6px;
+  gap: 6px;
 `;
 
 export { Card, Image, Description, Title, Subtitle, BadgesList };
