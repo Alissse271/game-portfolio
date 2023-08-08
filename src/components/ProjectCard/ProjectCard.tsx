@@ -1,20 +1,22 @@
 import { project } from "assets";
 import { Card, Image, Description, Title, Subtitle, BadgesList } from "./styles";
-import { Badge } from "components/Badge/Badge";
+import { Badge } from "components";
+import { IProject } from "types";
 
-export const ProjectCard = () => {
-  const badges = ["qwer", "asdfg", "vlaaaaad"];
+interface IProps {
+  project: IProject;
+}
+
+export const ProjectCard = ({ project: { title, description, tags } }: IProps) => {
   return (
     <Card>
       <Image src={project} alt="project image" />
       <Description>
-        <Title>Title</Title>
-        <Subtitle>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, sunt!
-        </Subtitle>
+        <Title>{title}</Title>
+        <Subtitle>{description}</Subtitle>
         <BadgesList>
-          {badges.map((label) => {
-            return <Badge label={label} key={label} />;
+          {tags.map((tag) => {
+            return <Badge label={tag} key={tag} />;
           })}
         </BadgesList>
       </Description>

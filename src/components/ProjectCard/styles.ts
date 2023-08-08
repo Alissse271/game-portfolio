@@ -2,8 +2,10 @@ import { styled } from "styled-components";
 import { Color } from "ui";
 
 const Card = styled.div`
-  max-width: 260px;
+  display: inline-block;
   width: 100%;
+  height: auto;
+  margin-bottom: 15px;
   border-radius: 23px;
   background-color: ${Color.GREY_THEME};
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
