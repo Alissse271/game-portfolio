@@ -5,10 +5,12 @@ import { HomePage, NotFoundPage } from "pages";
 
 export const Router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path={ROUTE.HOME} element={<MainTemplate />}>
-      <Route index element={<HomePage />} />
+    <>
+      <Route path={ROUTE.HOME} element={<MainTemplate />}>
+        <Route index element={<HomePage />} />
+      </Route>
       <Route path={ROUTE.NOT_FOUND} element={<NotFoundPage />} />
-    </Route>,
+    </>,
   ),
-  { basename: "/game-portfolio" },
+  // { basename: "/game-portfolio" },
 );
