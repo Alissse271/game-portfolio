@@ -1,4 +1,4 @@
-import { ProjectList, ThemeToggler } from "components";
+import { ProjectList } from "components";
 import { StyledHomePage } from "./styles";
 
 const projects = [
@@ -53,7 +53,6 @@ const projects = [
 export const HomePage = () => {
   return (
     <StyledHomePage>
-      <ThemeToggler />
       <ProjectList projects={projects} />
     </StyledHomePage>
   );

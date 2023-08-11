@@ -8,6 +8,8 @@ export const Router = createBrowserRouter(
     <>
       <Route path={ROUTE.HOME} element={<MainTemplate />}>
         <Route index element={<HomePage />} />
+        <Route path={ROUTE.PROJECTS} element={<HomePage />} />
+        <Route path={ROUTE.ABOUT} element={<HomePage />} />
       </Route>
       <Route path={ROUTE.NOT_FOUND} element={<NotFoundPage />} />
     </>,
