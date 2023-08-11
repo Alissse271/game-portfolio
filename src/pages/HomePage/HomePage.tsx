@@ -50,6 +50,14 @@ const projects = [
   },
 ];
 
+const cont = [
+  {
+    title: "8 Stellar Labyrinth",
+    description: "Lorem ipsum dolor sit amet",
+    tags: ["game", "youtube", "WebGL"],
+  },
+];
+
 export const HomePage = () => {
   return (
     <StyledHomePage>
