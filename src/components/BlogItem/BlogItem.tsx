@@ -7,7 +7,7 @@ interface IProps {
   project: IProject;
 }
 
-export const ProjectCard = ({ project: { title, description, tags } }: IProps) => {
+export const BlogItem = ({ project: { title, description, tags } }: IProps) => {
   return (
     <Card>
       <Image src={project} alt="project image" />

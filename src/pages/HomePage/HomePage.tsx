@@ -1,4 +1,4 @@
-import { ProjectList } from "components";
+import { BlogList } from "components";
 import { StyledHomePage } from "./styles";
 
 const projects = [
@@ -53,7 +53,7 @@ const projects = [
 export const HomePage = () => {
   return (
     <StyledHomePage>
-      <ProjectList projects={projects} />
+      <BlogList projects={projects} />
     </StyledHomePage>
   );
 };

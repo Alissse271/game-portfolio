@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 import { Media } from "ui";
 
-const StyledProjectList = styled.ul`
+const StyledBlogList = styled.ul`
   ${Media.MD} {
     column-count: 2;
     column-gap: 20px;
@@ -13,4 +13,4 @@ const StyledProjectList = styled.ul`
   }
 `;
 
-export { StyledProjectList };
+export { StyledBlogList };
