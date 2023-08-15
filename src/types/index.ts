@@ -1,3 +1,3 @@
-import { IProject, ITag } from "./types";
+import { IBlog, IProject, ITag } from "./types";
 
-export type { IProject, ITag };
+export type { IBlog, IProject, ITag };

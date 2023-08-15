@@ -1,16 +1,16 @@
-import { IProject } from "types";
+import { IBlog } from "types";
 import { StyledBlogList } from "./styles";
 import { BlogItem } from "components";
 
 interface IProps {
-  projects: IProject[];
+  blogs: IBlog[];
 }
 
-export const BlogList = ({ projects }: IProps) => {
+export const BlogList = ({ blogs }: IProps) => {
   return (
     <StyledBlogList>
-      {projects.map((project) => {
-        return <BlogItem project={project} key={project.title} />;
+      {blogs.map((blog) => {
+        return <BlogItem blog={blog} key={blog.title} />;
       })}
     </StyledBlogList>
   );

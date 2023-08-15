@@ -15,4 +15,7 @@ export const resetCSS = css`
   a {
     text-decoration: none;
   }
+  ul {
+    list-style: none;
+  }
 `;
