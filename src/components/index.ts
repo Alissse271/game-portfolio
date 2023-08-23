@@ -10,6 +10,7 @@ import { ProjectItem } from "./ProjectItem/ProjectItem";
 import { ProjectList } from "./ProjectList/ProjectList";
 import { AboutSection } from "./AboutSection/AboutSection";
 import { ButtonToTop } from "./ButtonToTop/ButtonToTop";
+import { Title } from "./Title/Title";
 
 export {
   BlogItem,
@@ -24,4 +25,5 @@ export {
   ProjectList,
   AboutSection,
   ButtonToTop,
+  Title,
 };

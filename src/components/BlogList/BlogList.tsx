@@ -1,6 +1,6 @@
 import { IBlog } from "types";
 import { StyledBlogList } from "./styles";
-import { BlogItem } from "components";
+import { BlogItem, Title } from "components";
 
 interface IProps {
   blogs: IBlog[];
@@ -8,10 +8,13 @@ interface IProps {
 
 export const BlogList = ({ blogs }: IProps) => {
   return (
-    <StyledBlogList id="blogs">
-      {blogs.map((blog) => {
-        return <BlogItem blog={blog} key={blog.title} />;
-      })}
-    </StyledBlogList>
+    <>
+      <Title id="blogs" label="Blogs" />
+      <StyledBlogList>
+        {blogs.map((blog) => {
+          return <BlogItem blog={blog} key={blog.title} />;
+        })}
+      </StyledBlogList>
+    </>
   );
 };

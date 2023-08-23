@@ -1,6 +1,6 @@
 import { IProject } from "types";
 import { StyledProjectList } from "./styles";
-import { ProjectItem } from "components";
+import { ProjectItem, Title } from "components";
 
 interface IProps {
   projects: IProject[];
@@ -8,10 +8,13 @@ interface IProps {
 
 export const ProjectList = ({ projects }: IProps) => {
   return (
-    <StyledProjectList id="projects">
-      {projects.map((project) => {
-        return <ProjectItem project={project} key={project.title} />;
-      })}
-    </StyledProjectList>
+    <>
+      <Title id="projects" label="Projects" />
+      <StyledProjectList>
+        {projects.map((project) => {
+          return <ProjectItem project={project} key={project.title} />;
+        })}
+      </StyledProjectList>
+    </>
   );
 };

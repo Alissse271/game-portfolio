@@ -7,7 +7,7 @@ const StyledProjectList = styled.ul`
   max-width: 1140px;
   width: 100%;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 0 0 40px 0;
 `;
 
 export { StyledProjectList };
