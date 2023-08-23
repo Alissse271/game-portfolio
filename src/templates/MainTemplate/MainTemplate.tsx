@@ -11,11 +11,13 @@ export const MainTemplate = () => {
     document.documentElement.setAttribute("theme", theme);
   }, [theme]);
   return (
-    <StyledMainTemplate>
+    <>
       <StyledHeader />
-      <Outlet />
-      <Footer />
-      <ButtonToTop />
-    </StyledMainTemplate>
+      <StyledMainTemplate>
+        <Outlet />
+        <Footer />
+        <ButtonToTop />
+      </StyledMainTemplate>
+    </>
   );
 };
