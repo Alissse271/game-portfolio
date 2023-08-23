@@ -8,7 +8,7 @@ interface IProps {
 
 export const ProjectList = ({ projects }: IProps) => {
   return (
-    <StyledProjectList>
+    <StyledProjectList id="projects">
       {projects.map((project) => {
         return <ProjectItem project={project} key={project.title} />;
       })}

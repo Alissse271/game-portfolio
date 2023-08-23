@@ -1,6 +1,7 @@
 export enum ROUTE {
   HOME = "/",
-  PROJECTS = "projects",
-  ABOUT = "about",
   NOT_FOUND = "*",
+  HASH_BLOGS = "#blogs",
+  HASH_PROJECTS = "#projects",
+  HASH_ABOUT = "#about",
 }

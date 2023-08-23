@@ -8,6 +8,8 @@ import { CustomNavLink } from "./CustomNavLink/CustomNavLink";
 import { Link } from "./Link/Link";
 import { ProjectItem } from "./ProjectItem/ProjectItem";
 import { ProjectList } from "./ProjectList/ProjectList";
+import { AboutSection } from "./AboutSection/AboutSection";
+import { ButtonToTop } from "./ButtonToTop/ButtonToTop";
 
 export {
   BlogItem,
@@ -20,4 +22,6 @@ export {
   Link,
   ProjectItem,
   ProjectList,
+  AboutSection,
+  ButtonToTop,
 };

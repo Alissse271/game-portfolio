@@ -8,6 +8,7 @@ import { ReactComponent as MailIcon } from "./icons/mail.svg";
 import { ReactComponent as TelegramIcon } from "./icons/telegram.svg";
 import { ReactComponent as YoutubeIcon } from "./icons/youtube.svg";
 import { ReactComponent as LeftArrowIcon } from "./icons/left-arrow.svg";
+import { ReactComponent as TopArrowIcon } from "./icons/top-arrow.svg";
 
 export {
   project,
@@ -19,4 +20,5 @@ export {
   TelegramIcon,
   YoutubeIcon,
   LeftArrowIcon,
+  TopArrowIcon,
 };

@@ -1,14 +1,24 @@
 import { ROUTE } from "router";
-import { Links, StyledHeader } from "./styles";
-import { ThemeToggler, CustomNavLink } from "components";
+import { Links, StyledHeader, StyledLink } from "./styles";
+import { ThemeToggler } from "components";
 
-export const Header = () => {
+interface IProps {
+  className?: string;
+}
+
+export const Header = ({ className }: IProps) => {
   return (
-    <StyledHeader>
+    <StyledHeader className={className}>
       <Links>
-        <CustomNavLink to={ROUTE.HOME}>BLOG</CustomNavLink>
-        <CustomNavLink to={ROUTE.PROJECTS}>PROJECTS</CustomNavLink>
-        <CustomNavLink to={ROUTE.ABOUT}>ABOUT</CustomNavLink>
+        <StyledLink to={ROUTE.HASH_BLOGS} smooth>
+          BLOG
+        </StyledLink>
+        <StyledLink to={ROUTE.HASH_PROJECTS} smooth>
+          PROJECTS
+        </StyledLink>
+        <StyledLink to={ROUTE.HASH_ABOUT} smooth>
+          ABOUT
+        </StyledLink>
       </Links>
       <ThemeToggler />
     </StyledHeader>

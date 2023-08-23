@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import { useAppSelector, getTheme } from "store";
-import { Footer, Header } from "components";
-import { StyledMainTemplate } from "./styles";
+import { ButtonToTop, Footer } from "components";
+import { StyledHeader, StyledMainTemplate } from "./styles";
 
 export const MainTemplate = () => {
   const { theme } = useAppSelector(getTheme);
@@ -12,9 +12,10 @@ export const MainTemplate = () => {
   }, [theme]);
   return (
     <StyledMainTemplate>
-      <Header />
+      <StyledHeader />
       <Outlet />
       <Footer />
+      <ButtonToTop />
     </StyledMainTemplate>
   );
 };

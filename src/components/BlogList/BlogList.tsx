@@ -8,7 +8,7 @@ interface IProps {
 
 export const BlogList = ({ blogs }: IProps) => {
   return (
-    <StyledBlogList>
+    <StyledBlogList id="blogs">
       {blogs.map((blog) => {
         return <BlogItem blog={blog} key={blog.title} />;
       })}
