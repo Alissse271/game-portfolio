@@ -96,6 +96,13 @@ const projects = [
     dateAdded: "10/07/2013",
     link: "https://www.google.by",
   },
+  {
+    image:
+      "https://templatemo.com/templates/templatemo_579_cyborg_gaming/assets/images/game-03.jpg",
+    title: "4 GTA6",
+    dateAdded: "10/07/2013",
+    link: "https://www.google.by",
+  },
 ];
 
 export const HomePage = () => {

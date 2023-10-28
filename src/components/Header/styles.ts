@@ -5,6 +5,7 @@ import { Color } from "ui";
 const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
+  column-gap: 10px;
   max-width: 1140px;
   width: 100%;
   margin: 0 auto;
@@ -12,6 +13,7 @@ const StyledHeader = styled.header`
 
 const Links = styled.nav`
   display: flex;
+  flex-wrap: wrap;
   column-gap: 10px;
 `;
 

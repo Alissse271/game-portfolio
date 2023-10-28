@@ -11,6 +11,8 @@ import { ProjectList } from "./ProjectList/ProjectList";
 import { AboutSection } from "./AboutSection/AboutSection";
 import { ButtonToTop } from "./ButtonToTop/ButtonToTop";
 import { Title } from "./Title/Title";
+import { PrivacyPolicy } from "./PrivacyPolicy/PrivacyPolicy";
+import { Subtitle } from "./Subtitle/Subtitle";
 
 export {
   BlogItem,
@@ -26,4 +28,6 @@ export {
   AboutSection,
   ButtonToTop,
   Title,
+  PrivacyPolicy,
+  Subtitle,
 };

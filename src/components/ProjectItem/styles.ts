@@ -8,7 +8,9 @@ const StyledProjectItem = styled.li`
   row-gap: 10px;
   padding: 0 0 10px 0;
 
-  border-bottom: 1px solid ${Color.GRAY};
+  &:not(:last-child) {
+    border-bottom: 1px solid ${Color.GRAY};
+  }
 
   ${Media.LG} {
     flex-direction: row;

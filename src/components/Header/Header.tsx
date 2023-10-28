@@ -19,6 +19,7 @@ export const Header = ({ className }: IProps) => {
         <StyledLink to={ROUTE.HASH_ABOUT} smooth>
           ABOUT
         </StyledLink>
+        <StyledLink to={ROUTE.PRIVACY_POLICY}>PRIVACY POLICY</StyledLink>
       </Links>
       <ThemeToggler />
     </StyledHeader>

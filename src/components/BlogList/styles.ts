@@ -1,6 +1,13 @@
 import { styled } from "styled-components";
 import { Media } from "ui";
 
+const Blogs = styled.div`
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  scroll-margin-top: 68px;
+`;
+
 const StyledBlogList = styled.ul`
   ${Media.MD} {
     column-count: 2;
@@ -13,4 +20,4 @@ const StyledBlogList = styled.ul`
   }
 `;
 
-export { StyledBlogList };
+export { Blogs, StyledBlogList };
